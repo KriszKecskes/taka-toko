@@ -1,22 +1,51 @@
 # 📚 Taka-Toko
- Taka-toko is a library, that can help to build React component(s) and export it as an NPM package.
+ Taka-toko is a boilerplate, that can help to build React component(s) and export them as an NPM package.
 
-## How to use?!
-* Taka-toko uses Webpack for bundle your code. The main concept takes place inside the *index.js*. You can export your React component or components in it.
-* You can publish your NPM package (of course you can change the project name inside the package.json / name), and after that, you can install it in your external project.
+## 📝 How to use it?!
+The **index.js** is the main part of this boilerplate. You can define here, which component or components would you export as the part of your NPM package.
 
-So as you can see, I left an example component inside the project, named Test. In the *index.js*, I can export it like this:
+You can use your own NPM package name instead of **taka-toko** of course! You only need to change the name property in the **package.json**.
+
+After you finished your components and imported them in to the **index.js** file, you can define what would you export from them as a reusable npm package component.
+
+So, in the **index.js** file you need to export them like this:
 
 ````javascript
 export {
-  Test
-  OtherComponent
-  //...Other component name
-};
+  YourComponent,
+  YourComponent2,
+  YourComponent3,
+  /*etc..*/
+}
 ````
-So, after I built (*npm run build*) the project and published the library with *npm publish* command, I can use it in my external project, like this:
+At last but not at least, you need to build the project with a command:
 
 ````javascript
-import { Test, OtherComponent } from 'your-package';
+npm run build
 ````
-Of course, you need to install your npm package inside the external project before you can use it.
+
+In th end, you need to publish your NPM package. First, you need to log in to the NPM system:
+
+````javascript
+npm login
+````
+
+And then, you need to publish your package:
+
+````javascript
+npm publish
+````
+
+## ☀️ Use your package in external project
+
+After the publish process you can install your package in your external project:
+
+````javascript
+npm install you-package-name
+````
+
+And then you can import your component or components that you created before:
+
+````javascript
+import { YourComponent, YourComponent2, YourComponent3 /*...etc*/ } from 'your-package-name';
+````
