@@ -1,6 +1,7 @@
 const paths = require('./build-paths');
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   output: {
     path: paths.buildPath,
