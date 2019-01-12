@@ -1,5 +1,5 @@
 # 📚 Taka-Toko
- Taka-toko is a boilerplate, that can help to build React component(s) and export them as an NPM package.
+ Taka-toko is a boilerplate, that can help you to build React component(s) and export them as an NPM package.
 
 ## 📝 How to use it?!
 The **index.js** is the main part of this boilerplate. You can define here, which component or components would you export as the part of your NPM package.
