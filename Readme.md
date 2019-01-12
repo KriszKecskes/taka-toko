@@ -49,3 +49,17 @@ And then you can import your component or components that you created before:
 ````javascript
 import { YourComponent, YourComponent2, YourComponent3 /*...etc*/ } from 'your-package-name';
 ````
+
+## 👨‍💻 Details abour developing process
+
+You have an option to test and preview your components. You just need to run:
+
+````javascript
+npm run watch
+````
+
+The browser will open on http://localhost:9000! Your develop entry point is *index.dev.js* file, where you can start coding.
+
+---
+
+**Don't forget to import/export in index.js file those components, that you would like to export as a NPM package in the build time!**

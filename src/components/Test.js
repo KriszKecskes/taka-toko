@@ -4,7 +4,7 @@ export default class extends PureComponent {
 
   render() {
     return(
-      <div>This is a Test!</div>
+      <div>This is a Test! :-)</div>
     )
   }
 
